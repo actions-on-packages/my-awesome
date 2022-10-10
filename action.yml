@@ -1,0 +1,13 @@
+name: "Composite Action"
+description: "Testing in composite action to test AOP flow."
+
+runs:
+  using: "composite"
+  steps:
+    - name: Checking out!
+      uses: actions/checkout@v3          
+
+    - name: Echo 
+      run: |
+          echo "Woohoo!! Action executed successfully!"
+      shell: bash
